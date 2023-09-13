@@ -59,7 +59,7 @@ body{
   .main h3:hover , .main h5:hover{
     color: white;
     cursor: pointer;
-    /* letter-spacing: 0.1em; */
+    
     transform: scale(0.8);
   }
   .main h5{
