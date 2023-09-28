@@ -432,6 +432,9 @@ a.nav-link{
                   <a class="nav-link" href="workouts.html">Workouts</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="workouts.html">Workouts</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
