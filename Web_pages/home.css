@@ -422,6 +422,7 @@ body{
 }
 
 .btn1:hover{
+  color: black;
   background-color: #7debef;
   letter-spacing: 0.15em;
   border: 2px solid #7debef;
