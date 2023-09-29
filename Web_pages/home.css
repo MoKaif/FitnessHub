@@ -422,11 +422,23 @@ body{
 }
 
 .btn1:hover{
+  color: black;
   background-color: #7debef;
   letter-spacing: 0.15em;
   border: 2px solid #7debef;
 }
 
+.store{
+  position: absolute;
+  /* margin-top: 5px; */
+  top: 0;
+  right: 7.5em;
+  border: none;
+}
+.store2{
+  right: 11em;
+  margin-top: 10px;
+}
 
 .lmid{
   margin-top: 10%;

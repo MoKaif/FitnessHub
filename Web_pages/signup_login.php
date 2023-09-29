@@ -432,11 +432,24 @@ a.nav-link{
                   <a class="nav-link" href="workouts.html">Workouts</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="workouts.html">Workouts</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact Us</a>
                 </li> 
+                <li class="nav-item">
+                  <a class="nav-link store" href="store.html"
+                    ><img
+                      class="store"
+                      src="/images/shop2.jpg"
+                      height="70px"
+                      width="80px"
+                      alt=""
+                  /></a>
+                </li>
               </ul>
               <div class="sign">
               <a href="signup_login.php" class="sup"> <button class="signup">Signup | Login</button></a> 
