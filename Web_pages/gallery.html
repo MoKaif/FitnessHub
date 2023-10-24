@@ -552,39 +552,42 @@ button .active{
           <!-- </div> -->
           
           <div class="wrapper">
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/aaron-brogden-9y4MaTz2Js0-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/anastase-maragos-7kEpUPB8vNk-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/brett-jordan-U2q73PfHFpM-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/cathy-pham-3jAN9InapQI-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/hayley-kim-studios-eot-ka5dM7Q-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/john-arano-h4i9G-de7Po-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/mob-alizadeh-93or5BgHobk-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/sushil-ghimire-5UbIqV58CW8-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/total-shape-Drq07X98BqM-unsplash.jpg"></span>
             </div>
-            <div class="pic Images">
+            <div class="pic Images" data-date="2023-10-05">
               <span><img src="/gym/total-shape-wXBK9JrM0iU-unsplash.jpg"></span>
-            </div>            
+            </div>    
+            <div class="pic Videos" data-date="2022-10-05">
+              <video src="../images/GymVideo.mp4">
+            </div>        
           </div>
         
 
@@ -612,6 +615,30 @@ button .active{
           <!-- <script src="button.js"></script> -->
         
         <script>
+
+
+// Get all the elements with the class "pic" (both images and videos)
+const picElements = document.querySelectorAll('.pic');
+
+// Convert NodeList to an array for easier manipulation
+const picArray = Array.from(picElements);
+
+// Sort the elements based on their data-date attribute (latest first)
+picArray.sort((a, b) => {
+    const dateA = new Date(a.getAttribute('data-date'));
+    const dateB = new Date(b.getAttribute('data-date'));
+    return dateB - dateA; // Sort in descending order (latest first)
+});
+
+// Clear the container where you want to display the sorted elements
+const container = document.querySelector('.wrapper');
+container.innerHTML = ''; // Clear the container
+
+// Append the sorted elements back to the container
+picArray.forEach((picElement) => {
+    container.appendChild(picElement);
+});
+
           const myslide = document.querySelectorAll('.myslide'),
 	  dot = document.querySelectorAll('.dot');
 let counter = 1;
@@ -761,6 +788,7 @@ video.forEach(play => play.addEventListener('click', () =>{
     play.currentTime = 0;
   }
 }));
+
   
   </script>    
 
