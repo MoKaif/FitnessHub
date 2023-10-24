@@ -202,7 +202,7 @@ $card="";
 
 <div class="whole">
 
-    <form action="cpay.php" method="post">
+    <form action="payscript.html" method="post">
       <div class="container p-0">
         <div class="card px-4">
           <p class="h8 py-3">Payment Details</p>
