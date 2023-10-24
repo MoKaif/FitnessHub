@@ -448,48 +448,63 @@ body{
 }
 
 
-
 @media only screen and (max-width: 600px) {
-.sign{
-position: relative;
-top: 7px;
-right: 0;
-margin-right: 2%;
-
-/* margin-left: 75%; */
-}
-
-
-.middle{
+  .sign{
+  position: relative;
+  top: 7px;
+  right: 0;
+  margin-right: 2%;
+  
+  /* margin-left: 75%; */
+  }
+  
+  .store{
+  position: relative;
+  margin-left: 10px;
+  right: 0;
+  border: none;
+    /* margin-top: 5px;
+    top: 0; */
+  /* right: 200px; */
+  }
+  
+  .store:hover{
+  border: none;
+  position: relative;
+  }
+  
+  .store2{
+  /* right: 11em; */
+  margin-top: -4px;
+  }
+  
+  .middle{
   display: flex;
   margin: 5em;
   flex-direction: column;
-}
-
-
-
-
-.navbar{
-  /* font-size: 2rem; */
+  }
+  
+  
+  .navbar{
   height: auto;
   
-}
-.nav-link{
+  }
+  .nav-link{
   margin: 0;
   padding: 0;
-}
-.nav-link:hover{
-  border: 1px solid white;
-  border-radius: 10px;
-
-}
-
-.typewriter h1 {
+  }
+  .nav-link:hover{
+  border: 0.1px solid white;
+  /* border-radius: 10px; */
+  
+  }
+  
+  .typewriter h1 {
   font-size: 1.7em;
-}
-
-
-.rightm{
+  }
+  
+  
+  .rightm{
   margin-top: 15%;
   position: relative;
   align-content: center;
@@ -499,9 +514,9 @@ margin-right: 2%;
   /* border: 2px solid red; */
     animation: 
   fadeInUp2 1.5s ease;
-}
-
-.rightm button{
+  }
+  
+  .rightm button{
     /* width: 20em; */
     height: auto;
     font-size: 1em;
@@ -521,9 +536,9 @@ margin-right: 2%;
   /* background-color: transparent; */
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.leftm{
+  }
+  
+  .leftm{
   /* z-index:1; */
   position: relative;
   /* border: 2px solid red; */
@@ -536,15 +551,15 @@ margin-right: 2%;
   text-align: center; */
   animation: 
   fadeInUp2 1.5s ease;
-}
-
-.leftm h2{
+  }
+  
+  .leftm h2{
   background-color: transparent;
   color: #f7f4f7;
   
-}
-
-.leftm button{
+  }
+  
+  .leftm button{
   color: white;
   padding: 1em;
   font-weight: 400;
@@ -554,19 +569,66 @@ margin-right: 2%;
   font-size: 1.2em;
   border-radius: 30px;
   background-color: transparent;
-  border: 2px solid #7debef;
+  border: 2px solid #660066;
   transition: 0.4s;
   
-}
-
-.quote{
+  }
+  
+  .quote{
   width: 100%;
   margin-left: 0;
   margin-top: 0;
   padding: 1em;
-}
+  }
+  
+  
+  .BMI{
+  
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+  align-items: center;
+  
+  }
+  
+  .card{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    color: white;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: transparent;
+    transition: 0.4s;
+  }
+  
+  
+  .bmic{
+    padding: 0;
+    border: 2px solid cyan;
+  }
+  
+  
+  
+  .card-text2{
+    margin-top: 20%;
+    line-height: 3em;
+  
+    /* visibility: hidden; */
+  }
+  
+  }
+  
+  
+  
 
-}
+
 
 
 
